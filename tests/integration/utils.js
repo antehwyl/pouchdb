@@ -18,7 +18,7 @@ testUtils.isCouchMaster = function () {
     testUtils.isCouchVersion('2.0');
 };
 
-testUtils.isCouchVersion = function(version) {
+testUtils.isCouchVersion = function (version) {
   return 'SERVER' in testUtils.params() &&
     testUtils.params().SERVER === 'couchdb-' + version;
 };
